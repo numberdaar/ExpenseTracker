@@ -1,10 +1,13 @@
-import Heading from "./Components/Heading";
+import Home from "./Pages/Home"
+import { SnackbarProvider } from 'notistack';
 
 function App() {
   return (
-    <div>
-      <Heading/>
-    </div>
+    <SnackbarProvider >
+      <div>
+        <Home />
+      </div>
+    </SnackbarProvider>
   );
 }
 
